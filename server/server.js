@@ -1,3 +1,17 @@
+
+//********* CONFIG CODE **********
+
+// var env = process.env.NODE_ENV || 'development';
+//
+// if(env === 'development'){
+//   process.env.PORT = 3000;
+//   process.env.MONGO_URI = 'mongodb://localhost:27017/TodoApp';
+// } else if (env === 'test') {
+//   process.env.PORT = 3000;
+//   process.env.MONGO_URI = 'mongodb://localhost:27017/TodoAppTest';
+// }
+
+
 const _ = require('lodash');
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -8,7 +22,7 @@ const {Todo} = require('./models/todo');
 const {User} = require('./models/user');
 
 var app = express();
-var port = process.env.PORT || 3000;
+var port = process.env.PORT;
 
 app.use(bodyParser.json());
 

@@ -12,7 +12,7 @@ var pass = 'testpass123';
 
 var hashedPass = '$2a$10$kmA53SAnWKwITgiqxsDDE.rkqbLS9CiqoP.5ELlZpQSsFSwzU/3mq';
 
-bcrypt.compare('hello', hashedPass, (err, res) => {
+bcrypt.compare('testpass123', hashedPass, (err, res) => {
   console.log(res);
 });
 
